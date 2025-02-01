@@ -112,7 +112,7 @@ void buscarPessoa() {
 void listarTodos() {
     void *tempBuffer = (char *)pBuffer + sizeof(int) + sizeof(char) + 50;
     if (*(int *)pBuffer == 0) {
-        printf("Nenhuma pessoa cadastrada.\n");
+        printf("\nNenhuma pessoa cadastrada.\n");
         return;
     }
     for (int i = 0; i < *(int *)pBuffer; i++) {
