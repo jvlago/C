@@ -79,7 +79,7 @@ void removerPessoa() {
         if (strcmp(tempBuffer, busca) == 0) {
             memmove(tempBuffer, (char *)tempBuffer + 100 + sizeof(int), (*(int *)pBuffer - i - 1) * (100 + sizeof(int)));
             (*(int *)pBuffer)--;
-            pBuffer = realloc(pBuffer, sizeof(int) + (*(int *)pBuffer) * (100 + sizeof(int)));
+            pBuffer = realloc(pBuffer, sizeof(int) + sizeof(char) + 50 + (*(int *)pBuffer) * (100 + sizeof(int)));
             printf("\nPessoa removida!\n");
             return;
         }
