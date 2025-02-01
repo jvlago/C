@@ -85,7 +85,7 @@ void removerPessoa() {
         }
         tempBuffer = (char *)tempBuffer + 100 + sizeof(int);
     }
-    printf("\nPessoa não encontrada!\n");
+    printf("\nPessoa nao encontrada!\n");
 }
 
 void buscarPessoa() {
@@ -106,7 +106,7 @@ void buscarPessoa() {
         }
         tempBuffer = (char *)tempBuffer + 100 + sizeof(int);
     }
-    printf("\nPessoa não encontrada!\n");
+    printf("\nPessoa nao encontrada!\n");
 }
 
 void listarTodos() {
