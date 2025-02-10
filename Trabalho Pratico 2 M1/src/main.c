@@ -50,7 +50,7 @@ int main() {
         (int[]){4, 5},
         (int[]){2, 10}
     };
-    int classesSize = sizeof( classes ) / sizeof( int ), extraStudents = 4;
+    int classesSize = sizeof( classes ) / sizeof( classes[0] ), extraStudents = 4;
     int *classesColSize = NULL; // Didn't use.
     double result = maxAverageRatio( classes, classesSize, classesColSize, extraStudents );
     printf( "%.5f\n", result );
