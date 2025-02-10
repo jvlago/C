@@ -53,7 +53,7 @@ int main() {
     int classesSize = sizeof( classes ) / sizeof( int ), extraStudents = 4;
     int *classesColSize = NULL; // Didn't use.
     double result = maxAverageRatio( classes, classesSize, classesColSize, extraStudents );
-    printf( "%.6f\n", result );
+    printf( "%.5f\n", result );
     return 0;
 }
 
