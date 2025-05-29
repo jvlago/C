@@ -44,7 +44,7 @@ Frequency
 void Frequency( int* sum, int* returnSize ) {
     int maxFreq = 0;
     int count = 0;
-    int freq[*returnSize];
+    int* freq = ( int* )malloc( sizeof( int ) * *returnSize );
     for ( int i = 0; i < *returnSize; i++ ) {
         freq[i] = 0;
         for ( int j = 0; j < *returnSize; j++ ) {
